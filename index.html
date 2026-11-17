@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24 Days of Loving You</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./calendario.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <!-- PANTALLA DE BIENVENIDA -->
+  <section class="welcome" id="welcome">
+
+    <div class="gold-frame"></div>
+
+    <span class="snowflake snow-one">❄</span>
+    <span class="snowflake snow-two">❄</span>
+    <span class="snowflake snow-three">❄</span>
+
+    <div class="welcome-content">
+
+      <p class="eyebrow">
+        CHRISTMAS 2026 · MADE WITH LOVE
+      </p>
+
+      <h1>
+        24 days of
+        <em>loving you</em>
+      </h1>
+
+      <p class="subtitle">
+        A little piece of my heart,<br>
+        wrapped up for you.
+      </p>
+
+      <div class="envelope-container">
+        <img
+          src="./assets/sobre.png"
+          alt="Christmas envelope with burgundy velvet bow"
+          class="envelope-image"
+          id="envelope"
+        >
+      </div>
+
+      <button class="open-button" id="open-button">
+        OPEN YOUR CHRISTMAS
+      </button>
+
+      <p class="closing-note">
+        Twenty-four days. A thousand reasons to love you.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CALENDARIO -->
+  <section class="calendar hidden" id="calendar">
+
+    <div class="gold-frame"></div>
+
+    <header class="calendar-header">
+      <p class="eyebrow">DECEMBER 2026</p>
+
+      <h2>
+        24 days of <em>loving you</em>
+      </h2>
+
+      <p>
+        A little surprise, every day of December.
+      </p>
+    </header>
+
+<!-- DECORACIONES VINTAGE DEL CALENDARIO -->
+<div class="scrapbook-decor" aria-hidden="true">
+
+  <span class="scrap decor-bow">୨୧</span>
+
+  <span class="scrap decor-star">✦</span>
+
+  <span class="scrap decor-branch">❧</span>
+
+  <span class="scrap decor-bells">♬</span>
+
+  <span class="scrap decor-snow">❄</span>
+
+</div>
+
+<div class="christmas-countdown" id="christmas-countdown">
+  <p class="countdown-heading">Our Christmas begins in...</p>
+  <div class="countdown-timer" id="countdown-timer"></div>
+  <p class="countdown-message">
+    24 little surprises, all made with love. ♡
+  </p>
+</div>
+
+
+<div class="calendar-grid" id="calendar-grid"></div>
+
+<footer class="calendar-footer">
+  Made with all my love, just for you.
+</footer>
+
+</section>
+
+
+  <!-- VENTANA DE REGALO -->
+  <div class="gift-modal hidden" id="gift-modal">
+
+    <div class="modal-box">
+      <button class="close-modal" id="close-modal">×</button>
+
+      <p class="eyebrow" id="gift-date"></p>
+      <h2 id="gift-title"></h2>
+
+      <div id="gift-content"></div>
+    </div>
+
+  </div>
+
+<!-- MUSICA NAVIDEÑA -->
+<audio id="christmas-music" loop preload="auto">
+  <source src="./assets/snowman.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-toggle" class="music-toggle" type="button"
+        aria-label="Pausar o reproducir música" hidden>
+  ♫ PAUSE MUSIC
+</button>
+
+<script src="./Assets/html2canvas.min.js"></script>
+
+
+
+</body>
+</html>
